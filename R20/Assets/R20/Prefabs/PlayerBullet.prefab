@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -3362141602181546517}
   - component: {fileID: 4949589236565548657}
   - component: {fileID: 2347657197916975807}
+  - component: {fileID: 556197780573082617}
   m_Layer: 8
   m_Name: PlayerBullet
   m_TagString: Untagged
@@ -166,3 +167,16 @@ ConstantForce2D:
   m_Force: {x: 0, y: 0}
   m_RelativeForce: {x: 10, y: 0}
   m_Torque: 0
+--- !u!114 &556197780573082617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5445523842380311076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d16215ba7de08f4287d1c91dc5c83b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 3
