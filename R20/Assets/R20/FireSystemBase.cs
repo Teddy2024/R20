@@ -2,15 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FireSystemBase : MonoBehaviour
+namespace KID
 {
-   [SerializeField, Header("子彈欲置物")]
-   private GameObject prefabBullet;
-   [SerializeField, Header("子彈生成點")]
-   private Transform pointSpawn;
-
-   protected void SpawnBullet()
+   public class FireSystemBase : MonoBehaviour
    {
-    Instantiate(prefabBullet, pointSpawn.position, pointSpawn.rotation);
+      [SerializeField, Header("子彈欲置物")]
+      private GameObject prefabBullet;
+      [SerializeField, Header("子彈生成點")]
+      private Transform pointSpawn;
+      [SerializeField, Header("發射音效")]
+      private AudioClip soundFire;
+
+      protected void SpawnBullet()
+      {
+         Instantiate(prefabBullet, pointSpawn.position, pointSpawn.rotation);
+         SoundManager.instance.PlaySound(soundFire, new Vector2(0.7f, 1.2f));
+      }
    }
 }

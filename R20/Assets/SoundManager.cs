@@ -7,18 +7,20 @@ namespace KID
     [RequireComponent(typeof(AudioSource))]
     public class SoundManager : MonoBehaviour
     {
+        public static SoundManager instance;
         private AudioSource aud;
-        // Start is called before the first frame update
+
         void Awake()
         {
+            instance = this;
             aud = GetComponent<AudioSource>();
         }
 
-       public void PlaySound(AudioClip sound, Vector2 rangeVolume)
-       {
-        float volume = Random.Range(rangeVolume.x, rangeVolume.y);
-        aud.PlayOneShot(sound, volume);
-       }
+        public void PlaySound(AudioClip sound, Vector2 rangeVolume)
+        {
+            float volume = Random.Range(rangeVolume.x, rangeVolume.y);
+            aud.PlayOneShot(sound, volume);
+        }
     }
 }
 
