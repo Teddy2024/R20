@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 3300845735880857550}
   - component: {fileID: 7210703948246517282}
   - component: {fileID: 907207204}
+  - component: {fileID: 729561318}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -200,6 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabBullet: {fileID: 5445523842380311076, guid: 3db3b73f607eab94e8fd657d4a2c8572, type: 3}
   pointSpawn: {fileID: 1647133907}
+  soundFire: {fileID: 8300000, guid: 5f3b12efe1cd3402cb905001e349e8aa, type: 3}
 --- !u!114 &907207204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,3 +216,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameTarget: Enemy
   prefabExplosion: {fileID: 501087662515151713, guid: e913e591216dc3943b2529325ecacea7, type: 3}
+  soundHit: {fileID: 8300000, guid: 5a734bcdccebe4d0aa169e4bc43d5210, type: 3}
+  soundExplosion: {fileID: 8300000, guid: eeac7ff7e4ad44587b11429a7e7b8fc1, type: 3}
+--- !u!114 &729561318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8948101207169358171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b6e7ba72e0763b40a0efcd6fe6f2992, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

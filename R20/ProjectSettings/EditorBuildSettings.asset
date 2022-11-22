@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Start.unity
     guid: 7321a03a11e082e43b50be4f69fc40f1
+  - enabled: 1
+    path: Assets/Scenes/Plane.unity
+    guid: a30cfcf49b9021a42b2ce9794e26094f
   m_configObjects: {}
